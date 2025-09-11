@@ -12,3 +12,4 @@
 /home/juan-jose/Documentos/TrabajosGrupo/LibraryHubble/obj/Debug/net9.0/LibraryHubble.pdb
 /home/juan-jose/Documentos/TrabajosGrupo/LibraryHubble/obj/Debug/net9.0/LibraryHubble.genruntimeconfig.cache
 /home/juan-jose/Documentos/TrabajosGrupo/LibraryHubble/obj/Debug/net9.0/ref/LibraryHubble.dll
+/home/juan-jose/Documentos/TrabajosGrupo/LibraryHubble/obj/Debug/net9.0/LibraryHubble.sourcelink.json
