@@ -28,7 +28,7 @@ while (flag)
             break;
         
         case "3":
-
+            
             break;
         
         case "4":
@@ -50,6 +50,16 @@ while (flag)
     }
 }
 
+void loansReturns()
+{
+    bool flagLoans = true;
+    string optionsLoans;
+    
+    while (flagLoans)
+    {
+        Console.Write();
+    }
+}
 
 
 class Book
