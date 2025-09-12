@@ -73,20 +73,57 @@ void MenuSecundario()
             case "1":
                 Console.WriteLine("A continuación ingrese los datos del libro");
                 Console.WriteLine("Nombre del libro: ");
-                string title = Console.ReadLine();
+                string title = Console.ReadLine()?.Trim();
+                if (string.IsNullOrWhiteSpace(title))
+                {
+                    Console.WriteLine("Debe ingresar un dato");
+                    continue;
+                }
                 
                 Console.WriteLine("Autor del libro: ");
-                string author = Console.ReadLine();
+                string author = Console.ReadLine()?.Trim();
+                if (string.IsNullOrWhiteSpace(title))
+                {
+                    Console.WriteLine("Debe ingresar un dato");
+                    continue;
+                }
                 
                 Console.WriteLine("Categorías del libro: ");
-                int categories = int.Parse(Console.ReadLine());
+                string categories = Console.ReadLine()?.Trim();
+                if (string.IsNullOrWhiteSpace(categories))
+                {
+                    Console.WriteLine("Debe ingresar un dato");
+                    continue;
+                }
                 
                 Console.WriteLine("Año del libro: ");
-                string age = Console.ReadLine();
+                string age = Console.ReadLine()?.Trim();
+                if (string.IsNullOrWhiteSpace(age))
+                {
+                    Console.WriteLine("Debe ingresar un dato");
+                    continue;
+                }
                 
                 Console.WriteLine("Cantidad de libros: ");
-                int amount = int.Parse(Console.ReadLine());
-                
+                string amount = Console.ReadLine()?.Trim();
+                if (string.IsNullOrWhiteSpace(amount))
+                {
+                    Console.WriteLine("Debe ingresar un dato");
+                    continue;
+                }
+                else
+                {
+                    int amountN;
+
+                    if (int.TryParse(amount, out amountN))
+                    {
+                     
+                    }
+                    else
+                    {
+                        Console.WriteLine("La entrada no es un número válido.");
+                    }
+                }
                 books.Add(new Book(title, author, categories, age, amount));
                 
                 break;
@@ -112,12 +149,12 @@ class Book
 {
     public string title { get; set; }
     public string author { get; set; }
-    public int category { get; set; }
+    public string category { get; set; }
     public string year { get; set; }
     public int amountAvailable  { get; set; }
     public List<Review> Reviews { get; set; }
 
-    public Book(string title, string author, int category, string year, int amountAvailable)
+    public Book(string title, string author, string category, string year, int amountAvailable)
     {
         this.title = title;
         this.author = author;
