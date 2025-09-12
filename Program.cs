@@ -119,6 +119,7 @@ void usersManagement(List<User> users)
                     Console.WriteLine($"- Documento: {user.id}");
                     Console.WriteLine($"- Nombre: {user.name}");
                     Console.WriteLine($"- Email: {user.email} \n");
+                }
                 break;
 
             case "3":
@@ -148,7 +149,7 @@ void usersManagement(List<User> users)
                     Console.WriteLine($"- Documento: {user.id}");
                     Console.WriteLine($"- Nombre: {user.name}");
                     Console.WriteLine($"- Email: {user.email}");
-                }
+                
                     break;
                 }
                 break;
