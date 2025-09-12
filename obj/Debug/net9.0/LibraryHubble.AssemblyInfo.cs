@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LibraryHubble")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73c3b5a0a1ba3ab6402ab7853940f028f691daa0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c996e55af5d4b07f966c7f7b64ce0c5a8c30d3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibraryHubble")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibraryHubble")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

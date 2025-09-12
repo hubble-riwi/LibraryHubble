@@ -157,9 +157,21 @@ void loansReturns()
                     if (findReturn)
                     {
                         books[idBook].amountAvailable += 1;
-                        Console.WriteLine("Libro devuelto con exitosamente");
+                        Console.WriteLine("Libro devuelto exitosamente");
+                        Console.WriteLine("------------------------------------------------------");
+                        Console.WriteLine("escriba una reseña sobre el libro: ");
+                        string  bookReview =  Console.ReadLine();
+                        Console.WriteLine("Dele una calificacion a este libro: ");
+                        double qualificationBook = double.Parse(Console.ReadLine());
+
+                        Review review = new Review
+                        {
+                            comment = bookReview,
+                            qualification = qualificationBook
+                        };
                         
-                        
+                        books[idBook].Reviews.Add(review);
+                        Console.WriteLine("Reseña registrada con éxito ✅");
                     }
                 }
 
@@ -194,7 +206,7 @@ class Book
 
 class Review
 {
-    public int qualification { get; set; } 
+    public double qualification { get; set; } 
     public string comment { get; set; }
 }
 
