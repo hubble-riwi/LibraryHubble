@@ -458,7 +458,12 @@ void MenuBooks()
                         foreach (var book in books)
                         {
                             Console.WriteLine(
-                                $"Título: {book.title} \nAutor: {book.author} \nCategoría: {book.category} \nAño: {book.year} \nCantidad Disponible: {book.amountAvailable}\n");
+                                $"Título: {book.title} \nAutor: {book.author} \nCategoría: {book.category} \nAño: {book.year} \nCantidad Disponible: {book.amountAvailable}\n ");
+                            foreach (var rev in book.Reviews)
+                            {
+                                Console.WriteLine("comentario: "+rev.comment + "\n" + "Calificacion: "+rev.qualification);
+                                
+                            }
                         }
                     }
 
@@ -486,6 +491,10 @@ void MenuBooks()
                             {
                                 Console.WriteLine(
                                     $"Libro encontrado: Título: {bookByTitle.title}, Autor: {bookByTitle.author}, Año: {bookByTitle.year}, Categoría: {bookByTitle.category}, Cantidad disponible: {bookByTitle.amountAvailable}");
+                                foreach (var rev in bookByTitle.Reviews)
+                                {
+                                    Console.WriteLine("comentario: "+rev.comment + "\n" + "Calificacion: "+rev.qualification);
+                                }
                             }
                             else
                             {
@@ -504,6 +513,10 @@ void MenuBooks()
                             {
                                 Console.WriteLine(
                                     $"Libro encontrado: Título: {booksByAuthor.title}, Autor: {booksByAuthor.author}, Año: {booksByAuthor.year}, Categoría: {booksByAuthor.category}, Cantidad disponible: {booksByAuthor.amountAvailable}");
+                                foreach (var rev in booksByAuthor.Reviews)
+                                {
+                                    Console.WriteLine("comentario: "+rev.comment + "\n" + "Calificacion: "+rev.qualification);
+                                }
                             }
                             else
                             {
@@ -522,6 +535,11 @@ void MenuBooks()
                             {
                                 Console.WriteLine(
                                     $"Libro encontrado: Título: {booksByCategory.title}, Autor: {booksByCategory.author}, Año: {booksByCategory.year}, Categoría: {booksByCategory.category}, Cantidad disponible: {booksByCategory.amountAvailable}");
+                                
+                                foreach (var rev in booksByCategory.Reviews)
+                                {
+                                    Console.WriteLine("comentario: "+rev.comment + "\n" + "Calificacion: "+rev.qualification);
+                                }
                             }
                             else
                             {
