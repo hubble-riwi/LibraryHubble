@@ -160,7 +160,14 @@ void loansReturns()
                     if (findReturn)
                     {
                         books[idBook].amountAvailable += 1;
-                        Console.WriteLine("Libro devuelto exitosamente");
+                        foreach (Loan loan in loans)
+                        {
+                            if (loan.userId == idUser && loan.titleBook == nameBook)
+                            {
+                                loan.status = "Devuelto";
+                                Console.WriteLine("Libro devuelto exitosamente");
+                            }
+                        }
                         Console.WriteLine("------------------------------------------------------");
                         Console.WriteLine("escriba una reseña sobre el libro: ");
                         string bookReview = Console.ReadLine();
@@ -320,7 +327,7 @@ void usersManagement(List<User> users)
     }
 
 
-    void MenuBooks()
+void MenuBooks()
     {
         string booksOption;
 

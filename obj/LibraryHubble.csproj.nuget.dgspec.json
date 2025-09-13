@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Programacion\\RIDER\\LibraryHubble\\LibraryHubble.csproj": {}
+    "/home/csharp/Escritorio/Martinez/LibraryHubble/LibraryHubble.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Programacion\\RIDER\\LibraryHubble\\LibraryHubble.csproj": {
+    "/home/csharp/Escritorio/Martinez/LibraryHubble/LibraryHubble.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Programacion\\RIDER\\LibraryHubble\\LibraryHubble.csproj",
+        "projectUniqueName": "/home/csharp/Escritorio/Martinez/LibraryHubble/LibraryHubble.csproj",
         "projectName": "LibraryHubble",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Programacion\\RIDER\\LibraryHubble\\LibraryHubble.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Programacion\\RIDER\\LibraryHubble\\obj\\",
+        "projectPath": "/home/csharp/Escritorio/Martinez/LibraryHubble/LibraryHubble.csproj",
+        "packagesPath": "/home/csharp/.nuget/packages/",
+        "outputPath": "/home/csharp/Escritorio/Martinez/LibraryHubble/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/csharp/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/csharp/.dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
